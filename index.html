@@ -166,7 +166,7 @@
       .cocktail-1 {
         height: 200px;
         width: 200px;
-        background-position: 0px -380px;
+        background-position: -380px -190px;
       }
       .cocktail-2 {
         height: 200px;
@@ -183,14 +183,16 @@
         width: 200px;
         background-position: -200px 0px;
       }
-      ._content{
-        display: flex
+      ._content {
+        display: flex;
       }
-      .instructions, .alt-instructions {
+      .instructions,
+      .alt-instructions {
         padding-top: 200px;
       }
 
-      ._content:hover>span>div{
+      ._block:hover > div._content > span > div,
+      ._block:hover > div._content > span > div {
         width: 400px;
         margin-left: -100px;
       }
@@ -206,7 +208,7 @@
       .subtitle {
         font-style: italic;
       }
-      .alt-instructions{
+      .alt-instructions {
         font-family: "Montserrat", sans-serif;
         color: black;
       }
@@ -976,54 +978,32 @@
     <div class="content">
       <div class="_block">
         <div class="_content">
-          <span class="cocktail-1" />
+          <span class="cocktail-4" />
 
           <div class="instructions">
-            <span class="title">Bloody Mary</span>
+            <span class="title">Old-Fashioned</span>
             <div class="ingredients">
               <span class="subtitle">Ingredients</span>
               <ul>
-                <li>Celery salt</li>
-                <li>1 lemon wedge</li>
-                <li>1 lime wedge</li>
-                <li>2 ounces vodka</li>
-                <li>4 ounces tomato juice</li>
-                <li>2 teaspoons prepared horseradish</li>
-                <li>2 dashes Tabasco sauce</li>
-                <li>2 dashes Worcestershire sauce</li>
-                <li>1 pinch ground black pepper</li>
-                <li>1 pinch smoked paprika</li>
-                <li>Garnish: parsley sprig</li>
-                <li>Garnish: green olives</li>
-                <li>Garnish: lime wedge</li>
-                <li>Garnish: celery stalk</li>
-              </ul>
+              <li>sugar cube (or 1 bar spoon simple syrup)</li>
+              <li>2 dashes Angostura bitter</li>
+              <li>2 ounces rye or bourbon</li>
+              <li>Orange twist</li>
+            </ul>
             </div>
             <div class="directions">
               <span class="subtitle">Directions</span>
               <ol>
-                <li>Pour some celery salt onto a small plate.</li>
                 <li>
-                  Rub the juicy side of the lemon or lime wedge along the lip of
-                  a pint glass.
+                  Muddle the sugar cube and bitters with one bar spoon of water
+                  at the bottom of a chilled rocks glass. (If using simple
+                  syrup, combine bitters and one bar spoon of syrup.) Add rye or
+                  bourbon. Stir.
                 </li>
                 <li>
-                  Roll the outer edge of the glass in celery salt until fully
-                  coated, then fill the glass with ice and set aside.
-                </li>
-                <li>
-                  Squeeze the lemon and lime wedges into a shaker and drop them
-                  in.
-                </li>
-                <li>
-                  Add the vodka, tomato juice, horseradish, Tabasco,
-                  Worcestershire, black pepper, paprika, plus a pinch of celery
-                  salt along with ice and shake gently.
-                </li>
-                <li>Strain into the prepared glass.</li>
-                <li>
-                  Garnish with parsley sprig, 2 speared green olives, a lime
-                  wedge and a celery stalk (optional).
+                  Add one large ice cube, or three or four smaller cubes. Stir
+                  until chilled and properly diluted, about 30 seconds. Slip
+                  orange twist on the side of the cube.
                 </li>
               </ol>
             </div>
@@ -1062,7 +1042,7 @@
 
       <div class="_block">
         <div class="_content">
-          <span class="cocktail-4" />
+          <span class="cocktail-1" />
           <div class="instructions">
             <span class="title">Amaretto Sour</span>
             <div class="ingredients">
@@ -1190,7 +1170,8 @@
         </div>
       </div>
     </div>
-    <audio id="player" autoplay controls loop><source src="./LetItSnow.wav"></audio>
-
+    <audio id="player" autoplay controls loop>
+      <source src="./LetItSnow.wav" />
+    </audio>
   </body>
 </html>
